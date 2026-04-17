@@ -100,3 +100,32 @@ footer {
         padding: 15px;
     }
 }
+
+/* FORMULARIO */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #e66a00;
+}
