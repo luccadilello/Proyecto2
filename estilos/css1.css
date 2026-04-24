@@ -76,6 +76,11 @@ h2 {
     text-transform: uppercase;
 }
 
+.hero h2 {
+    text-align: left;
+    text-transform: none;
+}
+
 h3 {
     color: #2563eb;
     margin-top: 0;
