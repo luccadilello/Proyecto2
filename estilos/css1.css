@@ -120,6 +120,7 @@ h3 {
 /* INTEGRANTES */
 .integrantes {
     border-left-color: #ff7a00;
+    margin-top: 20px;
 }
 
 .integrantes a {
