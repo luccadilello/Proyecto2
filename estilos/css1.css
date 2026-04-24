@@ -90,6 +90,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 14px;
+    margin-bottom: 20px;
 }
 
 /* CARDS */
@@ -110,8 +111,10 @@ h3 {
 /* IMAGEN PRINCIPAL */
 .main-img {
     width: 100%;
+    max-height: 250px;
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* INTEGRANTES */
