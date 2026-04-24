@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -61,6 +62,11 @@ main {
     flex: 1;
 }
 
+/* ESPACIADO GLOBAL */
+main > * {
+    margin-bottom: 20px;
+}
+
 /* TITULOS */
 h2 {
     text-align: center;
@@ -74,6 +80,7 @@ h2 {
 
 h3 {
     color: #00bcd4;
+    margin-top: 0;
 }
 
 /* HERO */
@@ -82,7 +89,6 @@ h3 {
     border-left: 5px solid #ff7a00;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 16px;
 }
 
 /* GRID */
@@ -90,7 +96,6 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 14px;
-    margin-bottom: 20px;
 }
 
 /* CARDS */
@@ -99,9 +104,15 @@ h3 {
     padding: 18px;
     border-radius: 8px;
     border-left: 5px solid #ff7a00;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: 0.2s;
 }
 
-/* IMÁGENES */
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* IMÁGENES EN CARDS */
 .card img {
     width: 100%;
     border-radius: 6px;
@@ -114,14 +125,9 @@ h3 {
     max-height: 250px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 /* INTEGRANTES */
-.integrantes {
-    margin-top: 20px;
-}
-
 .integrantes a {
     color: #ff7a00;
     text-decoration: none;
