@@ -72,6 +72,8 @@ main {
 
 h2 {
     margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h3 {
