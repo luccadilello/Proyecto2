@@ -48,6 +48,10 @@ header {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -87,7 +91,6 @@ nav a:hover {
 .active {
   color: var(--brand-strong);
   background: var(--brand-soft);
-  box-shadow: none;
 }
 
 /* MAIN */
@@ -100,7 +103,7 @@ main {
 }
 
 /* ESPACIADO GLOBAL */
-main>* {
+main > * {
   margin-bottom: 24px;
 }
 
@@ -176,6 +179,20 @@ h3 {
 }
 
 /* INTEGRANTES */
+.integrante {
+  margin-top: 20px;
+}
+
+.integrante img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--brand);
+  display: block;
+  margin-bottom: 10px;
+}
+
 .integrantes a {
   color: var(--brand);
   text-decoration: none;
@@ -196,7 +213,13 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   nav ul {
     flex-direction: column;
     gap: 8px;
