@@ -164,42 +164,39 @@ h3 {
 /* IMÁGENES EN CARDS */
 .card img {
   width: 100%;
-  max-width: 260px;
-  height: 160px;
-  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
   box-shadow: var(--shadow-sm);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* IMAGEN PRINCIPAL */
 .main-img {
   width: 100%;
-  max-width: 700px;
-  height: 260px;
+  max-height: 180px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
-  display: block;
-  margin: 0 auto;
 }
 
 /* INTEGRANTES */
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .integrante {
   margin-top: 20px;
 }
 
 .integrante img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--brand);
   display: block;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .integrantes a {
@@ -232,6 +229,10 @@ footer {
   nav ul {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .integrantes-grid {
+    grid-template-columns: 1fr;
   }
 
   main {
