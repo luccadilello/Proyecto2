@@ -223,12 +223,13 @@ footer {
 
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   nav ul {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
   }
 
   .integrantes-grid {
